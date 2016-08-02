@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+  </head>
+
+  <body>
+    <h1>Astro Weight Calculator</h1>
+    <h3>Find out how much you weigh on other planets!</h3>
+    <label>Enter Weight
+      <input id="weight" type="text">
+    </label>
+    <label>Select a Planet
+      <select name="planet" id="planetSelect">
+        <option value="27.9">The Sun</option>
+        <option value="0.377">Mercury</option>
+        <option value="0.9032">Venus</option>
+        <option value="1">Earth</option>
+        <option value="0.1655">The Moon</option>
+        <option value="0.3895">Mars</option>
+        <option value="2.640">Jupiter</option>
+        <option value="1.139">Saturn</option>
+        <option value="0.917">Uranus</option>
+        <option value="1.148">Neptune</option>
+        <option value="0.06">Pluto</option>
+      </select>
+    </label>
+    <button id="calculate">Calculate</button>
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

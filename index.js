@@ -1,16 +1,19 @@
 function calculate() {
+  var resultDiv = document.getElementById('result');
   var weight = document.getElementById('weight').value;
   //check if input is valid
   if(isNaN(weight)){
-    document.getElementById('result').textContent = "Error: Please enter a number.";
+    resultDiv.textContent = "Error: Please enter a number.";
+    return;
+  }else if(weight < 0){
+    resultDiv.textContent = "Error: Please enter a positive number."
     return;
   }
 
-  var select = document.getElementById('planetSelect');
-  var gfactor = select.options[select.selectedIndex].value;
-
-  var result = weight * gfactor;
-  document.getElementById('result').textContent = result;
+  var gfactor = document.getElementById('planetSelect').value;
+  var units = document.getElementById('units').value;
+  var result = (weight * gfactor).toFixed(2);
+  resultDiv.innerHTML = 'You would weigh ' + result + ' ' + units + '!';
 }
 
-document.getElementById('calculate').addEventListener("click", calculate);
+document.getElementById("calculate").addEventListener("click", calculate);

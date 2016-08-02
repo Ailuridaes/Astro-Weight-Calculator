@@ -1,0 +1,11 @@
+body {
+  margin: 20px;
+}
+
+button#calculate{
+  margin-top: 20px;
+}
+
+#result{
+ font-size: 120%;
+};

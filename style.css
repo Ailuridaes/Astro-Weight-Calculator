@@ -2,10 +2,20 @@ body {
   margin: 20px;
 }
 
-button#calculate{
+button#calculate {
   margin-top: 20px;
 }
 
-#result{
- font-size: 120%;
-};
+.error {
+  color: rgb(202, 60, 60);
+  display:inline-block;
+  border-radius: .5em;
+  border: medium solid rgb(202, 60, 60);
+  margin: 1em 0;
+}
+
+#result {
+  font-size: 120%;
+  padding: .5em;
+  margin: 1em;
+}
